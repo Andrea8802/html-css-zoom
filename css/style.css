@@ -1,0 +1,51 @@
+/* General Rules */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: red;
+    
+}
+
+/* Main Rules */
+main{
+    min-height: 90vh;
+    /* DEBUG */
+    background-color: black;
+}
+
+/* User Rules */
+.user{
+    position: relative;
+    margin: 0 2px;
+    flex-basis: 130px;
+    height: 100px;
+}
+
+    .user > img{
+        width: 100%;
+    }
+
+.label{
+    position: absolute;
+    bottom;
+}
+
+/* Footer Rules */
+footer{
+    background-color: #222222;
+    height: 10vh;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
