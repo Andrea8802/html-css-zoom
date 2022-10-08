@@ -44,9 +44,6 @@ main{
     text-decoration: none;
 }
 
-#speaker-view:hover{
-    background-color: #222222;
-}
 
 #f-screen{
     background-color: #4a4a4a;
@@ -56,22 +53,17 @@ main{
     text-decoration: none;
 }
 
-#f-screen:hover{
-    background-color: #222222;
-}
-
 /* User Rules */
 .user{
     position: relative;
     height: 100px;
 }
     .user > img{
-        height: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        filter: brightness(0.9);
     }
 
-.user:hover .label{
-    background-color: black;
-}
 
 .label{
     position: absolute;
@@ -85,6 +77,8 @@ main{
     color: white;
     padding: 3px 3px 18px;
 }
+
+
 
 /* Footer Rules */
 footer{
@@ -106,11 +100,6 @@ li{
     list-style-type: none;
 }  
 
-footer i:hover{
-    background-color: #3a3a3a;
-    padding: 8px;
-    border-radius: 100%;
-}
 
 #menu{
     height: 100%;
@@ -126,6 +115,11 @@ footer i:hover{
     justify-content: space-evenly;
     align-items: center;
     gap: 20px;
+} 
+
+#menu-left > div > div{
+    font-size: 11px;
+    color: white;
 }
 
 footer button{
@@ -147,11 +141,9 @@ footer button{
 
 }
 
-.arrow{
+#arrow{
     font-size: 13px;
 }
-
-
 
 #menu-center{
     height: 100%;
@@ -165,11 +157,16 @@ footer button{
 
 #menu-center > li{
     font-size: 24px;
+    text-align: center;
 }
 
 #menu-center > li > a{
     color: white;
     text-decoration: none;
+}
+
+#menu-center > li div{
+    font-size: 11px;
 }
 
 #share > i{
@@ -186,11 +183,9 @@ footer button{
     cursor: pointer;
 }
 
-#button-right:hover{
-    background-color: #6a6a6a;
-}
-
 #end-call{
     text-decoration: none;
     color:red;
+    text-align: center;
+    font-weight: bold;
 }
